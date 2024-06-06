@@ -1,0 +1,10 @@
+23:46:57 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32F429I_DISC1 -DSTM32 -DSTM32F429ZITx -DSTM32F4 -c -I../Inc -I"D:/My_Workspace/MCU1/stm32f4xx_drivers/drivers/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+In file included from ../Src/main.c:21:
+D:/My_Workspace/MCU1/stm32f4xx_drivers/drivers/inc/stm32f407xx.h:146:2: error: expected ';' before 'int'
+  146 | G
+      |  ^
+      |  ;
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
